@@ -1,0 +1,97 @@
+/* General Reset and Body Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Clean font */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Center the main content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container Styles */
+main {
+    width: 100%;
+    max-width: 500px; /* Set max width */
+    padding: 20px;
+    background: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center text */
+}
+
+/* Heading Styles */
+h1 {
+    color: #3d9970; /* A pleasant green color */
+    border-bottom: 2px solid #3d9970; /* Solid border */
+    padding-bottom: 10px; /* Space below the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Font size for the heading */
+}
+
+/* Form Element Styles */
+form {
+    display: grid; /* Use grid layout */
+    gap: 15px; /* Space between form elements */
+}
+
+/* Label Styles */
+label {
+    display: block; /* Ensure labels take the full width */
+    font-weight: bold; /* Bold font for labels */
+    margin-bottom: 5px; /* Space below labels */
+    text-align: left; /* Align text to the left */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Inner padding */
+    font-size: 16px; /* Font size */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus Styles for Inputs */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    outline: none; /* Remove default outline */
+    border-color: #3d9970; /* Change border color on focus */
+}
+
+/* Button Styles */
+button {
+    background-color: #3d9970; /* Button background color */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #2f7f58; /* Darker color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    
+    h1 {
+        font-size: 20px; /* Smaller font size for heading */
+    }
+}
